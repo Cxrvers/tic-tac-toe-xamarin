@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="tic_tac_toe_xamarin.MainPage">
+
+    <StackLayout>
+
+        <Label Text="Tic Tac Toe"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand" />
+
+
+        <Grid x:Name="board">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100" />
+                <RowDefinition Height="100" />
+                <RowDefinition Height="100" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <BoxView Grid.Row="0" Grid.Column="0" BackgroundColor="Gray">
+                <BoxView.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="BoxView_Tapped" />
+                </BoxView.GestureRecognizers>
+            </BoxView>
+            <BoxView Grid.Row="0" Grid.Column="1" BackgroundColor="Gray">
+                <BoxView.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="BoxView_Tapped" />
+                </BoxView.GestureRecognizers>
+            </BoxView>
+            <BoxView Grid.Row="0" Grid.Column="2" BackgroundColor="Gray">
+                <BoxView.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="BoxView_Tapped" />
+                </BoxView.GestureRecognizers>
+            </BoxView>
+            <BoxView Grid.Row="1" Grid.Column="0" BackgroundColor="Gray">
+                <BoxView.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="BoxView_Tapped" />
+                </BoxView.GestureRecognizers>
+            </BoxView>
+            <BoxView Grid.Row="1" Grid.Column="1" BackgroundColor="Gray">
+                <BoxView.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="BoxView_Tapped" />
+                </BoxView.GestureRecognizers>
+            </BoxView>
+            <BoxView Grid.Row="1" Grid.Column="2" BackgroundColor="Gray">
+                <BoxView.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="BoxView_Tapped" />
+                </BoxView.GestureRecognizers>
+            </BoxView>
+            <BoxView Grid.Row="2" Grid.Column="0" BackgroundColor="Gray">
+                <BoxView.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="BoxView_Tapped" />
+                </BoxView.GestureRecognizers>
+            </BoxView>
+            <BoxView Grid.Row="2" Grid.Column="1" BackgroundColor="Gray">
+                <BoxView.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="BoxView_Tapped" />
+                </BoxView.GestureRecognizers>
+            </BoxView>
+            <BoxView Grid.Row="2" Grid.Column="2" BackgroundColor="Gray">
+                <BoxView.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="BoxView_Tapped" />
+                </BoxView.GestureRecognizers>
+            </BoxView>
+        </Grid>
+        <Button Text="Reset" Clicked="Reset_Clicked" />
+
+
+
+
+
+    </StackLayout>
+
+</ContentPage>
